@@ -44,7 +44,6 @@ const DISH = {
   ]
 };
 
-var dish = DISH;
 
 @Component({
   selector: 'app-dish-detail',
@@ -54,6 +53,7 @@ var dish = DISH;
 export class DishDetailComponent implements OnInit {
 
   constructor() { }
+  dish = DISH;
 
   ngOnInit() {
   }

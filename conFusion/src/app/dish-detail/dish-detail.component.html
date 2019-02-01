@@ -5,13 +5,10 @@
     <p>Display the details of the Dish here</p>
 
     <div fxFlex *ngIf="dish">
-      <mat-card>
-        <mat-card-header>
+      <mat-card *ngIf="dish">
           <mat-card-title>
             <h3>{{dish.name | uppercase}}</h3>
-          </mat-card-title>
-        </mat-card-header>
-    
+          </mat-card-title>    
         <img mat-card-image src={{dish.image}} alt={{dish.name}}>
     
         <mat-card-content>
@@ -19,9 +16,6 @@
     
         </mat-card-content>
         <mat-card-actions>
-          <button mat-button>Like</button>
-          <button mat-button>Share</button>
-    
         </mat-card-actions>
       </mat-card>
     </div>
@@ -29,6 +23,11 @@
 
   <div fxFlex="40">
     <p>Display the list of comments here</p>
+
+    <mat-list *ngIf="dish">
+      <mat-list-item *ngFor="let comment of comments"> </mat-list-item>
+      {{dish.comment}}
+    </mat-list>
   </div>
 
 </div>
