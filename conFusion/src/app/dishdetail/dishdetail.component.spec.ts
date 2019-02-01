@@ -10,7 +10,7 @@ describe('DishdetailComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ DishdetailComponent ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
