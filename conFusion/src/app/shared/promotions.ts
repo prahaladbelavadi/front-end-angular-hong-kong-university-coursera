@@ -2,7 +2,7 @@ import { Promotion } from './promotion';
 
 export const PROMOTIONS: Promotion[] = [
     {
-        id: '0',
+        id: 0,
         name: 'Weekend Grand Buffet',
         image: '/assets/images/buffet.png',
         label: 'New',
