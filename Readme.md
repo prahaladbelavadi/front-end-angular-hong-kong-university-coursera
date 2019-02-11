@@ -16,4 +16,4 @@ License: MIT
 
 Reference Code: https://github.com/svlesiv/angular-coursera/
 
-Continue from: https://www.coursera.org/learn/angular/lecture/TbHkg/exercise-video-single-page-applications-part-2
+Continue from: https://www.coursera.org/learn/angular/home/week/3
