@@ -1,0 +1,209 @@
+[33mcommit ff3490ce7d1b54924bf694d5bf8fbc562abdd895[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Mon Feb 11 14:12:37 2019 +0530
+
+    added template to about component; need to change it to displ leaders; error: Leader at  about component  is not able to access Leader object isnce lLeader is not exported at Leaderservice.ts dexplore
+
+[33mcommit cb9a43bfd0781bf0bddf05763b83fdaa56ff9bb7[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Mon Feb 11 13:44:06 2019 +0530
+
+    assignment2: task1
+
+[33mcommit b28b062c74b7fb013849644fa2779d2da3fe64cc[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Mon Feb 11 12:51:43 2019 +0530
+
+    started assignment 2: generate leader service
+
+[33mcommit eaca109b832aac10737e277ec8bf88293ff895ee[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Mon Feb 11 12:45:22 2019 +0530
+
+    not const value; value can change
+
+[33mcommit f76ffc7549faf985ec1f6bd845485d9c583fb92b[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Fri Feb 8 17:07:48 2019 +0530
+
+    fix that dumb dishdetail thing; string was returnned in getDishes instead of number; That + sign converts string to number; it is very essential do not change
+
+[33mcommit 01a39d0f8459b61074dcab52070ef260b926ef6c[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Thu Feb 7 00:45:50 2019 +0530
+
+    the dish detail part is not working; the footber link is workingn
+
+[33mcommit 2cd7aa25b5e46fcd5267200086c5a048266e48cb[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Tue Feb 5 16:28:01 2019 +0530
+
+    continue from
+
+[33mcommit fe682f82f01cb677e33ba5a6015bf4741c9ee7f1[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Tue Feb 5 16:14:31 2019 +0530
+
+    add promotion service
+
+[33mcommit 8ed6485be3f2d7118505d8b90ece8c19316c6388[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Tue Feb 5 16:12:22 2019 +0530
+
+    single page application part 1; integrated contact, home components and dish and promotion serivices
+
+[33mcommit 36c67494db1dda3f75012e1a972304b4bbe13b7f[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Tue Feb 5 13:09:22 2019 +0530
+
+    angular router basics
+
+[33mcommit 6fce484b9265039d5b62f95964dc980bb9c158a4[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Mon Feb 4 16:33:45 2019 +0530
+
+    generate module app-routing
+
+[33mcommit 677dde7e96ed667802857143f1d96a6b11420a0d[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Mon Feb 4 16:33:09 2019 +0530
+
+    generate about, contact and home compnenents
+
+[33mcommit 5c8d082e25f76491c803ad996011e27357a7f476[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Mon Feb 4 16:21:35 2019 +0530
+
+    header and footer
+
+[33mcommit e767d4c1623d725827790e3e8852d8044d24a620[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Mon Feb 4 15:49:38 2019 +0530
+
+    generate header and  footer
+
+[33mcommit 1ba4b21d599e66ac6df76df0da8b3605684d084c[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Mon Feb 4 15:46:09 2019 +0530
+
+    import font-awsome
+
+[33mcommit e943cabd9f3b9011cae9939a44fe38011af9d980[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Mon Feb 4 15:18:49 2019 +0530
+
+    Basic Service
+
+[33mcommit 0a507a79c48af5e01df2d37406a134db623b06b5[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Mon Feb 4 14:54:39 2019 +0530
+
+    generate services
+
+[33mcommit ccb9916975ca86f57a92a7d8ec353a4320ffad7f[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Mon Feb 4 12:40:48 2019 +0530
+
+    Update Readme.md
+
+[33mcommit 9b3d69d62df4d759a67d8912567ea8db313aca16[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Mon Feb 4 12:36:50 2019 +0530
+
+    data binding
+
+[33mcommit 044c12985d40ce0fbe287828b08277962e2f2dea[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Sun Feb 3 00:55:52 2019 +0530
+
+    add diishes.ts
+
+[33mcommit 8ad137bea75fbea93229fe1401ff8aedd162d45a[m[33m ([m[1;31morigin/assignment-1[m[33m)[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Fri Feb 1 16:10:49 2019 +0530
+
+    add referennce; learnings and svelesiv repo for comparison; trying to learn from her by comparing how shes done and adopting practices
+
+[33mcommit 3d64936a85abc4a9155b441fb430ce444bba3915[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Fri Feb 1 16:07:15 2019 +0530
+
+    assignment 1; import and compare changes; flex layout wasnot proper, had not assigned and accessed DISH to dishes; ngfor made  a mistake when not accessing object that was being iteraated  inside of another object
+
+[33mcommit 069b0b36d7bc3d9ce1beb92e2c36c19adcb84241[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Fri Feb 1 15:54:58 2019 +0530
+
+    generate dish detail
+
+[33mcommit efc535e4e9c5de0ac3142340d14ad36e7351cddf[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Fri Feb 1 15:53:55 2019 +0530
+
+    remove dish detail component; will regeneraate and debug
+
+[33mcommit a329ebd10100b2258851b790844a88392fc07061[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Fri Feb 1 15:23:10 2019 +0530
+
+    attemplt to try cand fix
+
+[33mcommit e376ffb12472ff4640cc5921283604edc91d3a5b[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Fri Feb 1 12:25:17 2019 +0530
+
+    delete package-lock.json
+
+[33mcommit 139d4509970d88268e16785fdd75f58f255905db[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Fri Feb 1 12:24:46 2019 +0530
+
+    finish task 1 and in the middle of tsdk 2; need to customize cards to display details of the dish
+
+[33mcommit 7169cd6820f5d239187c617652649a9885555501[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Thu Jan 31 17:44:19 2019 +0530
+
+    generate dishDetail component
+
+[33mcommit 4b03f9095e761263be76b9b5ab8674b1ac3df586[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Thu Jan 31 15:28:47 2019 +0530
+
+    correct src; it doesnot make much difference; but flex is still a problem. menu title, images of menu and image split seperately
+
+[33mcommit 8a78910b0b4db7fafa7a5bddecc80fdb8fe0264c[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Thu Jan 31 15:11:20 2019 +0530
+
+    angular component part 2; add material card and matterial buttonn; move dishes to ann object for later using in a service
+
+[33mcommit 5b4ab282bd65c64651931b690cae835cba296919[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Thu Jan 31 14:35:01 2019 +0530
+
+    components part 1; generated menu component, addedto app.module, css and wrote alt ad image linking
+
+[33mcommit 66bd2646db0cc45a7c727dc9333c8bf172398a64[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Thu Jan 31 14:11:05 2019 +0530
+
+    generate menu componenet
+
+[33mcommit a30cb659bcf4eddee7b7d016c860e8fa09fa49e8[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Thu Jan 31 14:08:28 2019 +0530
+
+    add images
+
+[33mcommit 2c59cfe78ca3f3efba74278deeaa692c9624e712[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Wed Jan 30 17:20:17 2019 +0530
+
+    install and customize initial angular scaffolding application
+
+[33mcommit 2418d8783817ca4d1a82354279159e0dac2983e0[m
+Author: Prahalad Belavadi <prahaladbelavadi@gmail.com>
+Date:   Wed Jan 30 17:19:23 2019 +0530
+
+    initial commit
