@@ -7,12 +7,15 @@ import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import { MatOptionModule } from '@angular/material';
+import { MatOptionModule, MatSliderModule } from '@angular/material';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule, MatFormField } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms'
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -53,6 +56,7 @@ import { LoginComponent } from './login/login.component';
     MatToolbarModule,
     FlexLayoutModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     MatListModule,
     MatGridListModule,
@@ -62,7 +66,10 @@ import { LoginComponent } from './login/login.component';
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatSelectModule,
+    MatSliderModule,
+    MatSlideToggleModule
     ],
   providers: [
     DishService, PromotionService, LeaderService
