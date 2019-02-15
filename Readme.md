@@ -7,6 +7,9 @@ Reference: https://www.coursera.org/learn/angular
 - Still need to understand how the value is being passed from one component to another
 
 Bugs:
+- `ERROR in src/app/services/leader.service.ts(15,20): error TS2339: Property 'resolve' does not exist on type '<T>(resolver: (resolve: (val: IWhenable<T>) => void, reject: (reason: any) => void, notify: (prog...'.
+src/app/services/leader.service.ts(19,20): error TS2339: Property 'resolve' does not exist on type '<T>(resolver: (resolve: (val: IWhenable<T>) => void, reject: (reason: any) => void, notify: (prog...'.
+src/app/services/leader.service.ts(23,20): error TS2339: Property 'resolve' does not exist on type '<T>(resolver: (resolve: (val: IWhenable<T>) => void, reject: (reason: any) => void, notify: (prog...'.`
 
 Issues:
 - Personal laptop isn't rendering appropriately; The environment is too scattered with older projects, and non sorted untracked inventory.
