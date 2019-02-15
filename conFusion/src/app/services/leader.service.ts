@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { LEADERS } from '../shared/leaders';
 import {Leader} from '../shared/leader'
-import { promise } from 'protractor';
-import { Promise } from 'q';
+
 
 @Injectable({
   providedIn: 'root'
