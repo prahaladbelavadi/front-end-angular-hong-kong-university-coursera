@@ -5,7 +5,7 @@
   <mat-card fxFlex="40" *ngIf="dish">
     <mat-card-header>
       <mat-card-title>
-        <h3>{{dish.name | uppercase}}</h3>
+        <h3 *ngIf="dish">{{dish.name | uppercase}}</h3>
       </mat-card-title>
     </mat-card-header>
 
