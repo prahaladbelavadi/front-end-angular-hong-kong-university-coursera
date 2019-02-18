@@ -16,25 +16,21 @@ import { DishService } from '../services/dish.service';
 export class DishdetailComponent implements OnInit {
 
   dish: Dish;
-  dishIds: string[];
-  prev: string;
-  next: string;
+  dishIds: number[];
+  prev: number;
+  next: number;
 
   constructor(private dishservice: DishService,
     private route: ActivatedRoute,
     private location: Location) { }
 
   ngOnInit() {
-    this.dishservice.getDishIds()
-    .subscribe((dishIds)=> this.dishIds = dishIds)
-    
-    
-    this.route.params
-    .pipe(switchMap((params: Params) => this.dishservice.getDish(params['id'])))
-    .subscribe((dish) => {this.dish = dish; this.setPrevNext(dish.id)})
+    this.dishservice.getDishIds().subscribe(dishIds => this.dishIds = dishIds);
+    this.route.params.pipe(switchMap((params: Params) => this.dishservice.getDish(+params['id'])))
+      .subscribe(dish => { this.dish = dish; this.setPrevNext(dish.id); });
   }
 
-  setPrevNext(dishId: string){
+  setPrevNext(dishId: number){
     const index = this.dishIds.indexOf(dishId);
     this.prev = this.dishIds[(this.dishIds.length + index -1 ) % this.dishIds.length];
     this.next = this.dishIds[(this.dishIds.length + index + 1) % this.dishIds.length];
