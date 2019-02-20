@@ -80,7 +80,7 @@ export class ContactComponent implements OnInit {
           
           for (const key in control.errors){
             if (control.errors.hasOwnProperty(key)){
-              this.formErrors[field] += messages[key] + ' ';
+              this.formErrors[field] += messages[key] + '.';
             }
           }
         }
