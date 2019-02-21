@@ -6,6 +6,10 @@ Reference: https://www.coursera.org/learn/angular
 - Nesting and importing components
 - Still need to understand how the value is being passed from one component to another
 
+
+## Setup:
+- run `json-server --watch db.json -d 2000`
+
 Bugs:
 - `ERROR in src/app/services/leader.service.ts(15,20): error TS2339: Property 'resolve' does not exist on type '<T>(resolver: (resolve: (val: IWhenable<T>) => void, reject: (reason: any) => void, notify: (prog...'.
 src/app/services/leader.service.ts(19,20): error TS2339: Property 'resolve' does not exist on type '<T>(resolver: (resolve: (val: IWhenable<T>) => void, reject: (reason: any) => void, notify: (prog...'.
