@@ -55,7 +55,7 @@ export class DishdetailComponent implements OnInit {
 
   ngOnInit() {
     this.dishservice.getDishIds().subscribe(dishIds => this.dishIds = dishIds);
-    this.route.params.pipe(switchMap((params: Params) => this.dishservice.getDish(+params['id'])))
+    this.route.params.pipe(switchMap((params: Params)  => this.dishservice.getDish(+params['id'])))
       .subscribe(dish => { this.dish = dish; this.setPrevNext(dish.id); });
   }
 
@@ -107,14 +107,19 @@ export class DishdetailComponent implements OnInit {
   }
 
   onSubmit(){
-    this.commentForm = this.commentForm.value;
-    console.log(this.comment);
+    let date = new Date().toISOString();
+    this.comment = this.commentForm.value;
+    this.comment.date = date;
+
+    this.dish.comments.push(this.comment);
+
     this.commentForm.reset({
       author: '',
-      rating: 0,
+      rating: 5,
       comment: ''
-    })
-  
-    this.commentFormDirective.resetForm();
+    });
+
+    this.commentFormDirective.resetForm(this.commentForm.value);
+
   }
 }
