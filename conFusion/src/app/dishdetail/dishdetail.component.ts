@@ -3,8 +3,6 @@ import { Params, ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { switchMap} from 'rxjs/operators';
 
-import { MatSliderModule } from '@angular/material/slider';
-import { coerceNumberProperty } from '@angular/cdk/coercion';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { Dish } from '../shared/dish';
@@ -40,11 +38,8 @@ export class DishdetailComponent implements OnInit {
       'minlength': 'Author name must be at least 2 characters',
       'maxlength': 'Author name can be at most 25 characters'
     },
-    'rating': {
-      'required': 'Rating is required.'
-    },
     'comment': {
-      'required': 'Tel num is required.',
+      'required': 'comment is required.',
       'minlength': 'Comment must be at least 10 characters',
       'maxlength': 'Comment can be at most 250 characters'
     }
@@ -58,25 +53,6 @@ export class DishdetailComponent implements OnInit {
       this.createForm();
      }
 
-
-  autoTicks = false;
-  disabled = false;
-  invert = false;
-  max = 100;
-  min = 0;
-  showTicks = false;
-  step = 1;
-  thumbLabel = false;
-  value = 0;
-  vertical = false;
-
-  get tickInterval(): number | 'auto' {
-    return this.showTicks ? (this.autoTicks ? 'auto' : this._tickInterval) : 0;
-  }
-  set tickInterval(value) {
-    this._tickInterval = coerceNumberProperty(value);
-  }
-  private _tickInterval = 1;
   ngOnInit() {
     this.dishservice.getDishIds().subscribe(dishIds => this.dishIds = dishIds);
     this.route.params.pipe(switchMap((params: Params) => this.dishservice.getDish(+params['id'])))
@@ -90,7 +66,6 @@ export class DishdetailComponent implements OnInit {
 
   }
 
-
   goBack(): void {
     this.location.back();
   }
@@ -98,7 +73,7 @@ export class DishdetailComponent implements OnInit {
   createForm(){
     this.commentForm = this.fb.group({
       author: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25)]],
-      rating: [0, Validators.required, Validators.pattern],
+      rating: 5,
       comment: ['', [Validators.required, Validators.minLength(10),Validators.maxLength(250)]]
     });
 
@@ -109,13 +84,13 @@ export class DishdetailComponent implements OnInit {
   }
 
   onValueChanged(data?: any){
-    if (!this.commentForm) { return }
     const form = this.commentForm;
+    if (!form) { return };
+    
     for (const field in this.formErrors){
       if (this.formErrors.hasOwnProperty(field)){
-        // clearprevious error  messages if any
-
-        this.formErrors[field] = '';
+    
+        this.formErrors[field] = '';   // clearprevious error  messages if any
         const control = form.get(field)
 
         if (control && control.dirty && !control.valid){
@@ -130,7 +105,6 @@ export class DishdetailComponent implements OnInit {
       }
     }
   }
-
 
   onSubmit(){
     this.commentForm = this.commentForm.value;

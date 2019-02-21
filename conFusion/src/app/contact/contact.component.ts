@@ -102,7 +102,7 @@ export class ContactComponent implements OnInit {
       message:''
     });
 
-    this.feedbackFormDirective.resetForm();
+    this.feedbackFormDirective.resetForm(this.feedbackForm.value);
 
       
   }
