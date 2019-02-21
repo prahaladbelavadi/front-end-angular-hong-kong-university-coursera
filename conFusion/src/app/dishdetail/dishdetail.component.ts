@@ -39,9 +39,7 @@ export class DishdetailComponent implements OnInit {
       'maxlength': 'Author name can be at most 25 characters'
     },
     'comment': {
-      'required': 'comment is required.',
-      'minlength': 'Comment must be at least 10 characters',
-      'maxlength': 'Comment can be at most 250 characters'
+      'required': 'comment is required.'
     }
   };
 
@@ -74,7 +72,7 @@ export class DishdetailComponent implements OnInit {
     this.commentForm = this.fb.group({
       author: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25)]],
       rating: 5,
-      comment: ['', [Validators.required, Validators.minLength(10),Validators.maxLength(250)]]
+      comment: ['', [Validators.required]]
     });
 
     this.commentForm.valueChanges
