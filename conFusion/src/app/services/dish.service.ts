@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Dish } from '../shared/dish';
 import { of, Observable } from 'rxjs';
-import { delay } from 'rxjs/operators';
-import { map, catchError } from 'rxjs/operators';
+import { map, catchError, delay } from 'rxjs/operators';
+
 import { ProcessHTTPMsgService } from './process-httpmsg.service';
 
 import { HttpClient, HttpHeaders } from '@angular/common/http';
