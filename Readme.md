@@ -6,6 +6,8 @@ Reference: https://www.coursera.org/learn/angular
 - Nesting and importing components
 - Still need to understand how the value is being passed from one component to another
 
+----
+- Skipping out on angular testing; Need more context before learning why and how to test.
 
 ## Setup:
 - run `json-server --watch db.json -d 2000`
